@@ -2,6 +2,7 @@ import { sql } from '@vercel/postgres';
  
 export default async function handler(request, response) {
   try {
+    response.setHeader('Access-Control-Allow-Origin', '*')
     const gameId = request.query.gameId
     if(!gameId){
         return response.status(400).json({error: "You must provide a gameId"})

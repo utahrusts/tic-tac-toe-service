@@ -3,7 +3,7 @@ import { sql } from '@vercel/postgres';
 export default async function handler(request, response) {
   try {
     response.setHeader('Access-Control-Allow-Origin', '*')
-    const { symbol1, symbol2, rounds } = request.body;
+    const { symbol1, symbol2, rounds } = request.query;
     if(!symbol1 && !symbol2 && ! rounds){
         return response.status(400).json({error: "You must provide all column values(symbo1,symbol2,rounds)"})
     }

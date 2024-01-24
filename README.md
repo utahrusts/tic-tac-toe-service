@@ -48,9 +48,9 @@ Adds a new entry to the game_log table
 
 **Query Parameters**
 
-symbol1:  The name of the symbol picked by player 1
-symbol2:  The name of the sumbol picked by player 2
-rounds:   Number of rounds picked by the players
+*symbol1:  The name of the symbol picked by player 1
+*symbol2:  The name of the symbol picked by player 2
+*rounds:   Number of rounds picked by the players
 
 **Sample Response Body**
 
